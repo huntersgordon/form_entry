@@ -1,0 +1,65 @@
+PROCESS FOR PULLING WEBSITE INFORMATION, FILLING OUT FORMS
+
+1. Get google results of querying “powered by woobox”
+	googler \"Powered by Woobox\" -t=d1 -n=2
+		or
+		googler \"Powered by Woobox\" and \"Win\" -t=d1 -n=2
+
+    2. Download webpage, then use formfind to 
+	… find the form….
+	        curl [website] > index.html ; perl formfind.pl < index.html
+
+    3.fill out form
+	curl -d userId=YOURNAME -d pass=YOURPASS" 'https://safeconnect.bucknell.edu:8443/authenticate
+
+
+——————————————————————————————————————————————————————
+
+Google search: “for a chance to win”, 
+	if link contains number with decimal or “FM/AM”, it’s radio station, trash it.
+	page link redirects
+		 to “click to enter”
+		to “create an account”, send to account creator? trash
+		
+
+	What do contest forms ask for?
+		Follow on facebook/insta
+		Name
+			first name
+			last name
+		Phone
+		Date of birth
+			entered by text input
+			entered by year/month/day dropdowns
+		address
+			city
+			state
+			zip/postal
+			country
+		email
+		would you like to recieve info/newsletter?
+			set to no
+		i have read terms and conditions
+		I am 18 years or older
+		household income
+——————————————————————————————————————————————————————
+
+WOOBOX contests
+	click to enter
+	easily detectable, says “Powered by Woobox”
+	asks for any combination of:
+		facebook like
+		instagram follow
+		email address
+		birthday (dropdowns)
+		agree to rules
+		permission to email
+	then it asks if you want to share the promo
+
+googler \"Powered by Woobox\" -t=d1 -n=2
+	gets first 2 results from googling “powered by woobox”
+		gets results from last 24 hours
+	link is always on the second line of the result
+
+
+
