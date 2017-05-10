@@ -1,5 +1,4 @@
 # form_entry
-<<<<<<< HEAD
 This collection of codes fills out online contest forms.
 
   written in:
@@ -8,7 +7,7 @@ This collection of codes fills out online contest forms.
   utilizes code written in:
     PYTHON,
     PERL
- 
+
 How it works:
   uses a command line program called "googler" (creds to jarun)
     queries the string "for a chance to win"
@@ -16,11 +15,9 @@ How it works:
   takes links, then CURLs them, getting the code
     uses formfind.pl (creds to Daniel Stenberg,2002)
       then fills out the form based on keywords.
- 
+
  Ultimate Goal:
-   to win contests/giveaways. 
+   to win contests/giveaways.
      if many contests are entered, then liklihood of winning is greater!
- 
-=======
+
 fills out contest forms.
->>>>>>> 6b3276115af67aa3e7f23a68d21d91f0a4267de3
