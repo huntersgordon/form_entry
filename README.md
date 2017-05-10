@@ -1,4 +1,5 @@
 # form_entry
+<<<<<<< HEAD
 This collection of codes fills out online contest forms.
 
   written in:
@@ -20,3 +21,6 @@ How it works:
    to win contests/giveaways. 
      if many contests are entered, then liklihood of winning is greater!
  
+=======
+fills out contest forms.
+>>>>>>> 6b3276115af67aa3e7f23a68d21d91f0a4267de3
