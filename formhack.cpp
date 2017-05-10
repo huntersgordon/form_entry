@@ -7,9 +7,15 @@ using namespace std;
 string run(string cmd);
 void print(string urls[],unsigned els);
 int main(){
-     string num_of_urls = "100";
+     cout<<"query: ";
+     string query;
+     getline(cin,query);
+     cout << "number of results: ";
+     string num_of_urls;
+     cin >> num_of_urls;
      string urlarray [stoi(num_of_urls)];
-     string urls = run("googler \"Enter for a chance to win\" -t=d1 -n="+ num_of_urls +" --json");
+     //string urls = run("googler \"Enter for a chance to win\" -t=d1 -n="+ num_of_urls +" --json");
+     string urls = run("googler \""+ query + "\" -t=d1 -n="+ num_of_urls +" --json");
      string raw = urls;
      string intended_url = "";
      string output = "";
@@ -25,7 +31,8 @@ int main(){
      string input = "";
 
 
-     cout<<"Enter index of form you want to find, or custom url. q to exit"<<endl;
+     cout<<"Enter index of form you want to find, or custom url. q to exit."<<endl;
+     cout<<"\"list\" to display urls again."<<endl;
 
      bool printy = true;
      while(true){

@@ -21,3 +21,6 @@ How it works:
      if many contests are entered, then liklihood of winning is greater!
 
 fills out contest forms.
+
+How to use:
+     compile & run formhack.gpp
